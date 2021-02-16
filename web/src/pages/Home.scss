@@ -42,9 +42,16 @@
 	font-size: 24px;
 	line-height: 33px;
 	letter-spacing: 0.015em;
+
+	filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.35));
 }
 
 .interactions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 375px;
 	font-weight: bold;
 	font-size: 20px;
 	color: #DAE1E7;
@@ -64,7 +71,12 @@
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 	.button-github {
-		background: white;
+		font-weight: 600;
+		font-size: 22px;
+
+		background: transparent;
+		color: white;
+		border: solid 3px white;
 		border-radius: 15px;
 		padding: 12px;
 
@@ -74,8 +86,12 @@
 		}
 	}
 	.button-sharex {
-		background: #fb4949;
-		color: white;
+		font-weight: 600;
+		font-size: 22px;
+
+		background: transparent;
+		border: solid 3px #fb4949;
+		color: #fb4949;
 		border-radius: 15px;
 		padding: 12px;
 
@@ -86,7 +102,7 @@
 	}
 
 	&.wide {
-		width: 500px;
+		width: 375px;
 		max-width: 90vw;
 	}
 }
